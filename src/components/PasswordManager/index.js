@@ -95,6 +95,11 @@ class PasswordManager extends Component {
             src="https://assets.ccbp.in/frontend/react-js/password-manager-logo-img.png"
           />
           <div className="form-container">
+            <img
+              className="form-container-image-sm"
+              alt="password manager"
+              src="https://assets.ccbp.in/frontend/react-js/password-manager-sm-img.png"
+            />
             <form className="form" onSubmit={this.onSubmitFrom}>
               <h1 className="form-heading">Add New Password</h1>
               <div className="website-input-container">
@@ -144,7 +149,7 @@ class PasswordManager extends Component {
               </button>
             </form>
             <img
-              className="form-container-image"
+              className="form-container-image-lg"
               alt="password manager"
               src="https://assets.ccbp.in/frontend/react-js/password-manager-lg-img.png"
             />

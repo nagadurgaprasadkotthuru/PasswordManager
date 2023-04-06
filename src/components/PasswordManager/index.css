@@ -1,6 +1,6 @@
 .bg-container {
   background-image: linear-gradient(#9ba9eb, #c3caea);
-  min-height: 100vh;
+  width: 100vw;
   padding-top: 20px;
 }
 
@@ -34,6 +34,14 @@
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 576px) {
+  .form-container {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -43,10 +51,24 @@
   margin-right: 200px;
 }
 
+@media screen and (max-width: 576px) {
+  .form {
+    margin-right: 0px;
+    width: fit-content;
+    padding: 10px;
+  }
+}
+
 .form-heading {
   font-size: 22px;
   font-family: 'Roboto';
   color: #ffffff;
+}
+
+@media screen and (max-width: 576px) {
+  .form-heading {
+    font-size: 20px;
+  }
 }
 
 .website-input-container {
@@ -56,6 +78,13 @@
   margin-bottom: 16px;
   background-color: #ffffff;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .website-input-container {
+    width: 285px;
+    height: 35px;
+  }
 }
 
 .website {
@@ -79,9 +108,36 @@
   outline: none;
 }
 
-.form-container-image {
+@media screen and (max-width: 576px) {
+  .website-input {
+    width: 285px;
+    height: 35px;
+    padding-left: 5px;
+    margin-left: 5px;
+  }
+}
+
+.form-container-image-lg {
   width: 400px;
   height: 350px;
+}
+
+@media screen and (max-width: 576px) {
+  .form-container-image-lg {
+    display: none;
+  }
+}
+
+.form-container-image-sm {
+  width: 320px;
+  height: 260px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 578px) {
+  .form-container-image-sm {
+    display: none;
+  }
 }
 
 .button {
@@ -126,6 +182,12 @@
   font-weight: 600;
 }
 
+@media screen and (max-width: 576px) {
+  .no-of-passwords {
+    font-size: 14px;
+  }
+}
+
 .span-ele {
   border: 1px solid #ffffff;
   background-color: transparent;
@@ -144,22 +206,39 @@
   padding-bottom: 1px;
 }
 
+@media screen and (max-width: 576px) {
+  .span-ele {
+    margin-left: 3px;
+  }
+}
+
 .search-input-logo-container {
   display: flex;
   align-items: center;
   background-color: #ffffff;
+  width: fit-content;
 }
 
 .search-logo {
   width: 20px;
   height: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 576px) {
+  .search-logo {
+    width: 15px;
+    height: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 }
 
 .search-input {
   border: 0px;
   border-left: 1px solid #000000;
+  background-color: transparent;
   width: 220px;
   height: 32px;
   padding-left: 10px;
@@ -167,6 +246,14 @@
   font-family: 'Roboto';
   cursor: pointer;
   outline: none;
+}
+
+@media screen and (max-width: 576px) {
+  .search-input {
+    width: 140px;
+    height: 26px;
+    padding-left: 5px;
+  }
 }
 
 .horizontal-line {
@@ -215,4 +302,11 @@
 .unordered-lists-container {
   display: flex;
   height: 270px;
+  padding-left: 0px;
+}
+
+@media screen and (max-width: 576px) {
+  .unordered-lists-container {
+    flex-direction: column;
+  }
 }
